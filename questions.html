@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ========-->
+    <link rel="stylesheet" href="questionsPage.css">
+    
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Firebase_form</title>
+</head>
+<body>
+    <div class="container">
+        <header>Login Form</header>
+        <form id="loginForm">
+            <div class="form first">
+                <div class="input-field">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="input-field">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-field">
+                    <label>Assignment Title</label>
+                    <input type="text" name="assignmentTitle" id="assignmentTitle" required>
+                </div>
+                <div class="input-field">
+                    <label>Assignment Description</label>
+                    <input type="text" name="assignmentDescription" id="assignmentDescription" required>
+                </div>
+                <div class="input-field">
+                    <label>Due Date</label>
+                    <input type="date" id="dueDate" placeholder="Enter due date" required>
+                </div>
+                <button class="submit" href="uploadassignmnet.html">
+                    <span class="btnText">Submit</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+                
+            </div>
+        </form>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBDfvh0iCOVaju5QU4xmaDW6TIqOg0DFZs",
+            authDomain: "creativetutorials-15936.firebaseapp.com",
+            projectId: "creativetutorials-15936",
+            storageBucket: "creativetutorials-15936.appspot.com",
+            messagingSenderId: "731200604822",
+            appId: "1:731200604822:web:6e58a485abda0ea0e990b7"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // Get ref to database services
+        const db = getDatabase(app);
+
+        document.getElementById("loginForm").addEventListener('submit', function(e) {
+            e.preventDefault();
+            set(ref(db, 'user/' + document.getElementById("username").value), {
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                assignmentTitle: document.getElementById("assignmentTitle").value,
+                assignmentDescription: document.getElementById("assignmentDescription").value,
+                dueDate: document.getElementById("dueDate").value,
+            });
+            alert("Login Successful");
+        });
+    </script>
+</body>
+</html>
