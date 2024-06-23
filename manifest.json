@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Study Stream",
+    "version": "100.0",
+    "description": "A tool to organize your homework",
+    "content_scripts": [
+    {
+    "matches": ["<all_urls>"],
+    "js": ["Adblocker/Content.js"]
+    }
+    ],
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://www.youtube.com/*",
+        "https://www.facebook.com/*",
+        "https://www.netflix.com/*"
+    ]
+
+}
