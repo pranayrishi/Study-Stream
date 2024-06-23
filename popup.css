@@ -1,0 +1,293 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  width: 400px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  align-items: center;
+  background: linear-gradient(to right, #DAE2F8, #D6A4A4);
+}
+
+.button{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90FF;
+  width: 120px;
+  height: 50x;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; 
+}
+.button:hover, .button:focus, .button:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.upload_Assignment{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90FF;
+  width: 150px;
+  height: 50x;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; 
+}
+
+.upload_Assignment:hover, .upload_Assignment:focus, .upload_Assignment:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.toDoList{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90FF;
+  width: 150px;
+  height: 50x;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; 
+}
+
+.toDoList:hover, .toDoList:focus, .toDoList:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.title {
+  position: relative;
+  width: 250px;
+}
+
+.title input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  color: #141111;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.title span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.title input:valid ~ span,
+.title input:focus ~ span {
+  color: #fff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #4070f4;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.description {
+  position: relative;
+  width: 250px;
+}
+
+.description input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  color: #141111;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.description span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.description input:valid ~ span,
+.description input:focus ~ span {
+  color: #fff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #4070f4;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+.dropdown{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.dropdown {
+  border: none;
+  appearance: none;
+  padding: 0 30px 0 15px;
+  width: 50%;
+  color: #fff;
+  background-color: #1e90FF;
+  font-size: 20px;
+}
+
+.email {
+  position: relative;
+  width: 250px;
+}
+
+.email input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  color: #141111;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.email span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.email input:valid ~ span,
+.email input:focus ~ span {
+  color: #fff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #4070f4;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.save{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90FF;
+  width: 120px;
+  height: 50x;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; 
+}
+.save:hover, .save:focus, .save:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.back{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90FF;
+  width: 120px;
+  height: 50x;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; 
+}
+.back:hover, .back:focus, .back:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.create_Calendar{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1e90FF;
+  width: 150px;
+  height: 50x;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; 
+}
+.create_Calendar:hover, .create_Calendar:focus, .create_Calendar:active{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
